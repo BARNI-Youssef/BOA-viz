@@ -75,6 +75,6 @@ df_pie = df[df['Année'] == year].groupby(['Année']).sum().drop(['Mois', 'Total
 pie = go.Figure(data=[go.Pie(
   labels = accounts,
   values = [df_pie[acc][0] for acc in accounts],
-  title = f'Contribution au total (en pourcentage) des différents comptes pour l\'année {year}'
+  title = f'Contribution au total (en pourcentage) des\n différents comptes pour l\'année {year}'
 )])
 st.plotly_chart(pie)
