@@ -84,3 +84,24 @@ pie.update_layout(
 st.plotly_chart(pie)
 
 st.markdown("## Analyse 2022 - 2023")
+
+'''Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue mauris et purus vehicula, ut rhoncus nisl rhoncus. 
+Donec tristique, leo vitae convallis dictum, libero velit molestie lorem, non maximus ante metus id augue. Etiam in efficitur lorem. 
+Vivamus mattis elit et tincidunt dignissim. Praesent sed nisi nec mauris condimentum suscipit id in nisi. Donec euismod dui eleifend, 
+finibus sem ut, sodales massa. Quisque purus risus, sollicitudin ac mattis quis, facilisis lacinia diam. Pellentesque at enim non magna 
+venenatis ultrices quis non erat. Vivamus ultricies pretium turpis ac laoreet. Maecenas id volutpat ante. Praesent vel congue sem.
+
+Proin felis ante, pulvinar id sem nec, molestie auctor magna. Cras ornare velit mi, quis aliquam sem lacinia quis. Ut ultrices turpis 
+ac massa lobortis elementum. Vestibulum vel mauris maximus mi dignissim blandit. Donec quis mi sit amet nulla tempor interdum id sit amet 
+enim. Donec dictum vehicula mollis. Sed varius egestas velit ac luctus. Nulla facilisi. Mauris malesuada nisl ut dolor faucibus, ultrices 
+bibendum purus tincidunt. Suspendisse hendrerit sollicitudin enim et euismod. Nunc vel turpis non felis tempus condimentum in auctor 
+dolor. Etiam placerat finibus mauris, sit amet tincidunt lorem. Curabitur id nisi sed augue tincidunt tempus. Nam et elementum tellus. 
+Cras pretium augue lacus, vel pretium purus tempor vel. Curabitur congue neque porta purus sodales vehicula.
+
+Aenean lacinia, tortor sed tincidunt sollicitudin, nunc eros convallis ligula, eu imperdiet eros est ut urna. Maecenas convallis sed 
+nunc eu vulputate. Integer ut cursus risus. Curabitur id maximus arcu. Etiam tortor enim, mattis eget mauris vitae, mattis tristique 
+elit. Maecenas nec tortor sit amet enim mattis gravida. Ut metus ligula, dignissim non lorem vitae, rhoncus facilisis mauris. Morbi 
+tortor sapien, congue sit amet iaculis at, suscipit eget orci. Nullam eget lectus nec erat venenatis venenatis et in massa. Phasellus 
+nec tincidunt erat, sit amet consequat neque. Sed at egestas tellus, et pretium nunc. Etiam sed purus ac magna tristique egestas. 
+Curabitur posuere commodo libero ac condimentum. In commodo tellus velit, a elementum urna condimentum in. Nunc commodo lectus purus, 
+eget luctus velit vulputate sed.'''
