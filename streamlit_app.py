@@ -85,7 +85,7 @@ st.plotly_chart(pie)
 
 st.markdown("## Analyse 2022 - 2023")
 
-'''L'analyse de l'évolution de ces comptes entre 2022 et 2023 montre des tendances qui varient d'un mois à l'autre, 
+st.write('''L'analyse de l'évolution de ces comptes entre 2022 et 2023 montre des tendances qui varient d'un mois à l'autre, 
 avec des différences significatives selon les comptes.
 
 En observant l’évolution des totaux mensuels, on remarque que les chiffres en 2022 varient entre 70 millions et 128 millions, avec 
@@ -112,4 +112,4 @@ produisent durant l'été 2023, en juillet et août, avec des chiffres supérieu
 En résumé, l’année 2022 présente des fluctuations notables dans les totaux mensuels, avec des pics en milieu et fin d’année. En 2023, 
 les chiffres sont plus homogènes et stables, bien qu'il y ait des hausses importantes en juillet et août, suivies d’une diminution en 
 septembre.
-'''
+''')
