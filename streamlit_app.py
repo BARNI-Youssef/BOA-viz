@@ -70,7 +70,7 @@ fig2.update_layout(barmode='stack')
 st.plotly_chart(fig2)
 
 year = st.selectbox('Année', df_year.index)
-df_pie = df[df['Année'] == year]
+df_pie = df[df['Année'] == year].groupby(['Année']).sum().drop(['Mois', 'Total'], axis=1)
 st.dataframe(df_pie)
 pie = go.Figure(data=[go.Pie(
   labels = accounts,
