@@ -82,3 +82,5 @@ pie.update_layout(
   legend_title="Compte"
 )
 st.plotly_chart(pie)
+
+st.markdown("## Analyse 2022 - 2023")
