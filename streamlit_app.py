@@ -59,7 +59,7 @@ for acc in accounts :
   df_year[acc] /= df_year['Total']/100
 
 st.dataframe(df_year)
-
+st.write(df_year.columns)
 fig2 = go.Figure()
 for acc in accounts:
   fig2.add_trace(go.Bar(
