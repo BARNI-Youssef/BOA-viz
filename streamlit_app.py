@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import os
 import plotly.express as px
+import plotly.graph_objects as go
 
 script_path = os.path.abspath(__file__)
 script_dir = os.path.dirname(script_path)
@@ -58,3 +59,15 @@ for acc in accounts :
   df_year[acc] /= df_year['Total']/100
 
 st.dataframe(df_year)
+
+fig2 = go.Figure()
+for acc in accounts:
+  fig2.add_trace(go.Bar(
+      x = df_year[acc],
+      y = df_year['Année'],
+      orientation='h',
+      name = acc
+    )
+  )
+fig2.update_layout(barmode='stack')
+st.plotly_chart(fig2)
