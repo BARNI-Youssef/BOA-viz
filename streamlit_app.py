@@ -76,5 +76,6 @@ pie = go.Figure(data=[go.Pie(
   labels = accounts,
   values = [df_pie[acc] for acc in accounts]
 )])
-st.write(df_pie[accounts[0]])
+st.write(accounts)
+st.write([df_pie[acc] for acc in accounts])
 st.plotly_chart(pie)
