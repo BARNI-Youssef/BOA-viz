@@ -51,3 +51,4 @@ st.plotly_chart(fig)
 df['Année'] = df['Mois'].apply(lambda x: x.split('-')[1])
 
 df_year = df.groupby(['Année']).sum().drop(['Mois'], axis=1)
+st.datadframe(df_year)
