@@ -51,4 +51,10 @@ st.plotly_chart(fig)
 df['Année'] = df['Mois'].apply(lambda x: x.split('-')[1])
 
 df_year = df.groupby(['Année']).sum().drop(['Mois'], axis=1)
+# st.dataframe(df_year)
+accounts = ('121101','121205','251100','251101','251102','251103','251110')
+
+for acc in accounts :
+  df[acc] /= df['total']*100
+
 st.dataframe(df_year)
