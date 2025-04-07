@@ -52,14 +52,11 @@ st.plotly_chart(fig)
 df['Année'] = df['Mois'].apply(lambda x: x.split('-')[1])
 
 df_year = df.groupby(['Année']).sum().drop(['Mois'], axis=1)
-# st.dataframe(df_year)
 accounts = ('121101','121205','251100','251101','251102','251103','251110')
 
 for acc in accounts :
   df_year[acc] /= df_year['Total']/100
 
-st.dataframe(df_year)
-st.write(df_year.columns)
 fig2 = go.Figure()
 for acc in accounts:
   fig2.add_trace(go.Bar(
@@ -71,3 +68,11 @@ for acc in accounts:
   )
 fig2.update_layout(barmode='stack')
 st.plotly_chart(fig2)
+
+year = st.selectbox('Année', df_year.index))
+
+pie = go.Figure(data=[go.Pie(
+  labels = accounts,
+  values = df.groubby(['Année']).sum().drop(['Mois', 'Total'], axis=1)[accounts]
+)])
+px.plotly_chart(pie)
