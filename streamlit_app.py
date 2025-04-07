@@ -74,6 +74,6 @@ df_pie = df[df['Année'] == year].groupby(['Année']).sum().drop(['Mois', 'Total
 st.dataframe(df_pie)
 pie = go.Figure(data=[go.Pie(
   labels = accounts,
-  values = df[df['Année'] == year].sum().drop(['Mois', 'Total'], axis=1)[[*accounts]]
+  values = df_pie
 )])
 st.plotly_chart(pie)
