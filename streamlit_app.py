@@ -66,7 +66,7 @@ for acc in accounts:
       name = acc
     )
   )
-fig2.update_layout(barmode='stack')
+fig2.update_layout(barmode='stack', title='Contribution au total par année.',legend_title="Compte")
 st.plotly_chart(fig2)
 
 year = st.selectbox('Année', df_year.index)
@@ -74,8 +74,8 @@ df_pie = df[df['Année'] == year].groupby(['Année']).sum().drop(['Mois', 'Total
 
 pie = go.Figure(data=[go.Pie(
   labels = accounts,
-  values = [df_pie[acc][0] for acc in accounts],
-  title = f'''Contribution au total (en pourcentage) des
-  différents comptes pour l\'année {year}'''
+  values = [df_pie[acc].iloc(0) for acc in accounts],
+  title = f'Contribution au total (en pourcentage) des différents comptes pour l\'année {year}',
+  legend_title="Compte"
 )])
 st.plotly_chart(pie)
