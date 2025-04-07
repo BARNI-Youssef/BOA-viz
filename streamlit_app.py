@@ -48,7 +48,6 @@ fig.update_layout(
 )
 st.plotly_chart(fig)
 
-st.write(type(df['Mois'][0]))
 df['Année'] = df['Mois'].apply(lambda x: x.split('-')[1])
 
-st.write(df['Année'].unique()) 
+df_year = df.groupby(['Année']).sum().drop(['Mois'], axis=1)
