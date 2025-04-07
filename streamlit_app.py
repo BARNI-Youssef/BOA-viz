@@ -77,4 +77,7 @@ pie = go.Figure(data=[go.Pie(
   values = [df_pie[acc].iloc[0] for acc in accounts],
   title = f'Contribution au total (en pourcentage) des différents comptes pour l\'année {year}'
 )])
+pie.update_layout(
+    legend_title="Compte"
+)
 st.plotly_chart(pie)
