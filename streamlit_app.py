@@ -64,7 +64,7 @@ fig2 = go.Figure()
 for acc in accounts:
   fig2.add_trace(go.Bar(
       x = df_year[acc],
-      y = df_year['Année'],
+      y = df_year[df_year.columns[0]],
       orientation='h',
       name = acc
     )
