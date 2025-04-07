@@ -85,4 +85,31 @@ st.plotly_chart(pie)
 
 st.markdown("## Analyse 2022 - 2023")
 
-''''''
+'''L'analyse de l'évolution de ces comptes entre 2022 et 2023 montre des tendances qui varient d'un mois à l'autre, 
+avec des différences significatives selon les comptes.
+
+En observant l’évolution des totaux mensuels, on remarque que les chiffres en 2022 varient entre 70 millions et 128 millions, avec 
+des hausses significatives en juin (128 millions) et en décembre (101 millions). Cette année-là, il y a une certaine irrégularité dans 
+les valeurs, avec des pics, notamment en juin, suivi d'une baisse en novembre. En 2023, les totaux sont plus réguliers. Par exemple, 
+le total de janvier 2023 est de 78 millions, tandis que celui de décembre est de 79,97 millions, montrant une stabilité avec une légère 
+baisse en fin d’année.
+
+Lorsqu’on se concentre sur les comptes plus spécifiquement, le compte 121101, qui représente une part importante des totaux, 
+connaît une tendance 
+générale à la baisse de 2022 à 2023. En janvier 2022, le montant est de 34,77 millions, en janvier 2023, il tombe à 26,75 millions.
+Cependant, en juillet 2023, il atteint un pic à 46,65 millions, suggérant un ajustement exceptionnel en cours d'année. 
+Le compte 121205, quant à lui, montre des valeurs élevées en 2022, atteignant 89 millions en juin et 43 millions en décembre. En 
+2023, il semble plus stable, avec une légère tendance haussière.
+
+Les comptes 251100 et 251101, montrent des tendances similaires, à savoir une hausse continue tout au long des deux années. 
+Alors que les comptes 251102 et 251103 ont connu une année 2022 très stable avec des valeurs fluctuant autour de 7M et 300K 
+respectivement tandis que l'année 2023 à été synonyme de de grande évolution pour les deux comptes. 
+
+Une analyse plus détaillée montre également qu’il y a des mois où une diminution globale est observée, notamment en mars 2023, avec un 
+total plus bas de 46 millions. En revanche, des pics notables se 
+produisent durant l'été 2023, en juillet et août, avec des chiffres supérieurs à 100 millions.
+
+En résumé, l’année 2022 présente des fluctuations notables dans les totaux mensuels, avec des pics en milieu et fin d’année. En 2023, 
+les chiffres sont plus homogènes et stables, bien qu'il y ait des hausses importantes en juillet et août, suivies d’une diminution en 
+septembre.
+'''
