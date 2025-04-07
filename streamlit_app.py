@@ -27,33 +27,25 @@ st.plotly_chart(fig)
 
 df_melted = df.melt(id_vars=['Mois'], value_vars=df.columns[1:-1], var_name='Compte', value_name='Valeur')
 
-# Create stacked bar chart
 fig = px.bar(
     df_melted, x='Mois', y='Valeur', color='Compte',
     title="Balance Totale, par compte",
     labels={'Valeur': 'Compte', 'Mois': 'Temps'},
-    # title='Balance Total, par compte'
 )
-
 fig.update_layout(
-    xaxis=dict(tickangle=-45, tickmode='array', tickvals=df['Mois'][::5]),  # Show every 5th month
+    xaxis=dict(tickangle=-45, tickmode='array', tickvals=df['Mois'][::5]), 
     yaxis_title="Montant",
     barmode='stack',
     hovermode="x unified"
 )
-
 st.plotly_chart(fig)
 
 df_long = df[df.columns[:-1]].melt(id_vars=['Mois'], var_name='Compte', value_name='Montant')
-
-# Create the box plot, ensuring accounts are treated as categorical
 fig = px.box(df_long, x='Compte', y='Montant', title="Boite à moustache des comptes")
-
-# Update layout to set the x-axis as categorical (this ensures proper spacing)
 fig.update_layout(
     xaxis=dict(type='category'),
      xaxis_title='Compte',
 )
-
-# Display plot
 st.plotly_chart(fig)
+
+st.write(type(df['Mois'][0]))
