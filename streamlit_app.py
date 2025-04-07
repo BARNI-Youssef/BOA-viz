@@ -55,6 +55,6 @@ df_year = df.groupby(['Année']).sum().drop(['Mois'], axis=1)
 accounts = ('121101','121205','251100','251101','251102','251103','251110')
 
 for acc in accounts :
-  df[acc] /= df['Total']*100
+  df_year[acc] /= df_year['Total']*100
 
 st.dataframe(df_year)
