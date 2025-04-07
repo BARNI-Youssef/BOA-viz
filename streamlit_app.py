@@ -69,7 +69,7 @@ for acc in accounts:
 fig2.update_layout(barmode='stack')
 st.plotly_chart(fig2)
 
-year = st.selectbox('Année', df_year.index))
+year = st.selectbox('Année', df_year.index)
 
 pie = go.Figure(data=[go.Pie(
   labels = accounts,
